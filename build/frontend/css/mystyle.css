@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Display Heavy'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}  
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Display Bold'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Display Medium'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+     
+@font-face {
+  font-family: 'Amazon Ember Display';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Display Regular'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}		 
+
+@font-face {
+  font-family: 'Amazon Ember Mono';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Mono Bold'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Mono';
+  src: url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular.eot');
+  src: local('https://neonicheintegrated.in/2024/aws/fonts/Amazon Ember Mono'), local('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular.woff2') format('woff2'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular.woff') format('woff'),
+      url('https://neonicheintegrated.in/2024/aws/fonts/AmazonEmberMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}	
+
+
+:root {
+  --colorDark:#001129;
+  --colorWhite:#FFFFFF;
+  --colorBlack:#000000;
+  --colorDarkGray:#333333;
+  --colorTeal500:#00ADA2;
+  --colorGray100:#F9F9FB;
+  --colorGray150:#F6F6F9;
+  --colorGray250:#EBEBF0;
+  --colorOrg:#ff6a3d;
+  --colorMint300:#3DFF9E;
+
+  --colorMonoGreenLight:#ebfff6;
+  --colorMonoGreenMedium:#8fffce;
+  --colorMonoPinkLight:#ffe0fb;
+  --colorMonoPinkMedium:#ff94f1;
+  --colorMonoPurpleLight:#e8d1ff;
+  --colorMonoPurpleMedium:#ad5cff;
+  --colorMonoPurpleDark:#7300e5;
+  --colorMonoPurpleExtDark:#300061;
+
+
+  --font50:50px;
+  --font38:38px;
+  --font28:28px;
+  --font20:20px;
+  --font18:18px;
+  --font16:16px;
+  --font14:14px;
+  --font12:12px;
+  --font11:11px;
+  --font10:10px;
+
+  --fw900:900;
+  --fw800:800;
+  --fw700:700;
+  --fw600:600;
+  --fw500:500;
+  --fw400:400;
+  --fw300:300;
+  --fw200:200;
+  --fw100:100;
+}
+
+body {font-family: 'Amazon Ember Display', Helvetica, sans-serif;}
+p {font-size:16px; line-height: 140%;}
+.fs50 {font-size: var(--font50);}
+.fs38 {font-size: var(--font38);}
+.fs28 {font-size: var(--font28);}
+.fs20 {font-size: var(--font20);}
+.fs18 {font-size: var(--font18);}
+.fs16 {font-size: var(--font16);}
+.fs14 {font-size: var(--font14);}
+.fs12 {font-size: var(--font12);}
+
+.fw900 {font-weight: var(--fw900);}
+.fw800 {font-weight: var(--fw800);}
+.fw700 {font-weight: var(--fw700);}
+.fw600 {font-weight: var(--fw600);}
+.fw500 {font-weight: var(--fw500);}
+.fw400 {font-weight: var(--fw400);}
+.fw300 {font-weight: var(--fw300);}
+.fw200 {font-weight: var(--fw200);}
+.fw100 {font-weight: var(--fw100);}
+
+.navbar-bg {background-color: var(--colorDark); padding: 15px 0;}
+.nav-link {color: var(--colorWhite);}
+.nav-link:hover {color: var(--colorMint300);}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {color: var(--colorTeal500);}
+
+.btn-primary {background-color:var(--colorMonoPurpleDark); padding: 8px 35px !important; color:var(--colorWhite)!important; text-decoration: none; transition: all ease 0.5s;}
+.btn-primary:hover  {background-color:var(--colorDark)!important;}
+
+.btn-org {background-color: #ff9900; padding:7px 50px; min-width: 250px; display: inline-block; text-decoration:none; text-align: center; color: var(--colorDark); font-size:var(--font14); font-weight: var(--fw700); border-radius:25px; transition: all 0.3s ease;}
+.btn-org:hover {background-color: #ec7211;}
+
+
+
+.title-fs28 {font-size: var(--font28); font-weight: var(--fw700);}
+.wrapper {background-image: linear-gradient(rgba(255, 255, 255, 0) 25.81%, rgb(255, 255, 255) 100%), linear-gradient(119.91deg, rgb(255, 192, 173) 7.63%, rgb(248, 199, 255) 39.56%, rgb(210, 204, 255) 71.68%, rgb(194, 209, 255) 92.12%); min-height:70vh; height: auto; overflow: hidden;}
+.wrapper .event-title-sec {padding-top: 3.5rem; padding-bottom: 3.5rem;}
+.wrapper .event-title-sec h1 {font-size:var(--font50); font-weight: var(--fw700); line-height: 122%;}
+#about, #event, #event-filter, #footer {padding: 50px 0; }
+#about h2{color:var(--colorDarkGray); margin-bottom: 25px;}
+#about p{color:var(--colorDarkGray);}
+.event-sec {/*background-color:var(--colorTeal500);*/background: linear-gradient(145deg,#1a0c32, #5d1368, #1a0c32, #421080, #e1ac7a);}
+
+/*=========== HOME PAGE =================*/
+.header-sec {background: linear-gradient(145deg,#1a0c32, #5d1368, #1a0c32, #741572, #421080, #3f006f, #e1ac7a, #741572, #7f2eed);
+  background-size: 250% 250%; animation: gradient-animation 15s ease infinite; min-height:450px; padding: 40px 0; position: relative; display: flex; align-items: center; color: var(--colorWhite);}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.header-sec h1 {font-size:var(--font38); font-weight: 700; line-height: 120%; margin-bottom:2.5%;}
+.header-sec h2 {font-size:var(--font28); font-weight: 500; line-height: 120%; margin-bottom:2.5%;}
+.header-sec h3 {font-size:var(--font20); font-weight:300; line-height: 120%; margin-bottom:2.5%;}
+.step-container {position: relative;text-align: center;transform: translateY(-43%);}
+.step-circle {width: 30px;height: 30px; border-radius: 50%; background-color: #fff; border: 2px solid #007bff; line-height: 30px;
+  font-weight: bold; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; cursor: pointer; /* Added cursor pointer */}
+.step-line {position: absolute; top: 16px;left: 50px; width: calc(100% - 100px); height: 2px; background-color: #007bff; z-index: -1;}
+#multi-step-form{ overflow-x: hidden;}
+
+.upComingEventSwiper > .swiper-button-next, .swiper-button-prev {color:var( --colorOrg)!important;}
+
+.eventUpcomingCard {display: flex;flex-direction: column;justify-content: stretch; background: rgb(235, 255, 246); background: linear-gradient(315deg, rgba(235, 255, 246, 1) 16%, rgba(255, 224, 251, 1) 60%, rgba(232, 209, 255, 1) 100%); padding: 35px; border-radius:20px; position: relative;text-decoration: none; transition: all 0.5s ease; min-height:650px;}
+.eventUpcomingCard .eventCatagory {display: flex; flex-direction: row; background-color: var(--colorMonoPurpleDark); padding: 5px 7px; font-size: var(--font16); font-weight: var(--fw400); color: var(--colorWhite); display: inline-block;}
+.eventUpcomingCard .attendy { font-size: var(--font14)!important; font-weight: var(--fw400); color:var(--colorDark); opacity: 0.5}
+.eventUpcomingCard .eventTitle {display: flex; flex-direction: row; font-size: var(--font28); font-weight: var(--fw600); color: var(--colorDark); display: inline-block; line-height: 130%; margin:30px 0; transition: all 0.7s ease;}
+.eventUpcomingCard:hover .eventTitle{}
+.eventUpcomingCard .event-discription {font-size:var(--font16); font-weight: var(--fw400); color: var(--colorDark); line-height:120%; margin-bottom: 30px; text-decoration: none;transition: all 0.7s ease; }
+.eventUpcomingCard:hover  .event-discription {opacity: 0.1;}
+.eventUpcomingCard .event-discription span{ font-weight: var(--fw700);display: block; margin-bottom:8px;}
+.eventUpcomingCard .eventDetails {list-style-type: none; padding: 0;}
+.eventUpcomingCard .eventDetails .eventDetailsList { margin-right: 15px; color: var(--colorDark); display: block; margin-bottom: 5px; list-style-type: none!important;}
+.eventUpcomingCard .eventDetails .eventDetailsList i {margin-right: 15px;}
+.eventUpcomingCard:hover .eventDetails .eventDetailsList{font-weight:var(--fw700);}
+
+.eventDetails {padding: 0;}
+.eventDetails .eventDetailsList {list-style-type: none!important;}
+
+
+
+.eventUpcomingCard .knowMore {display: flex;align-items: center;cursor: pointer; color: var(--colorOrg);}
+.eventUpcomingCard .arrow {font-size:var(--font38); font-weight:var(--fw700); transition: transform 0.3s ease-in-out;}
+.eventUpcomingCard .text {opacity: 0;transform: translateX(-20px);transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; margin-left:-80px;  white-space: nowrap; font-size: var(--font16);}
+.eventUpcomingCard:hover .knowMore .arrow {transform: translateX(90px);}
+.eventUpcomingCard:hover  .knowMore .text {opacity: 1; transform: translateX(80px);}
+.event-filter-sec .swiper-button-next:after, .swiper-button-prev:after {font-family: swiper-icons; font-size:var(--font20)!important;}
+
+.event_main_con {width: 100%; height: auto; overflow: hidden; padding: 30px 15px; border-top:3px solid var(--colorDark); box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1); margin-bottom: 30px;}
+.event_main_con {text-decoration: none;}
+.event_main_con .event-type, .event-seat {color:var(--colorDark); font-size: var(--font12); font-weight:var(--fw600); text-decoration: none; text-transform: uppercase;}
+.event_main_con .event-seat {color: var(--colorOrg);}
+.event_main_con .eventTitle a {color: var(--colorTeal500);  font-size: var(--font20); text-decoration: none; margin: 15px 0; transition: all ease 0.5s;}
+.event_main_con:hover .eventTitle a {color: var(--colorDark);}
+.event_main_con .eventSubTitle {color: var(--colorDark); font-size: var(--font16); margin:25px 0;}
+.event_main_con_footer {border-top:1px solid var(--colorGray250); padding-top: 15px;}
+.event_main_con_footer .date {font-weight:var(--fw500); font-size: var(--font13)!important; opacity: 0.7}
+.event_main_con_footer .duration {font-weight:var(--fw500); font-size: var(--font13)!important; color: var(--colorDark); opacity: 0.7}
+.event_main_con_footer .timeZone {font-weight:var(--fw500); font-size: var(--font11)!important; color: var(--colorDark); opacity: 0.7}
+
+.event_main_con_footer .btn-gradient {background-color: var(--colorDark); color: var(--colorWhite); text-decoration: none; padding:5px 8px; transition: all ease 0.5s;}
+.event_main_con:hover .btn-gradient {background-color: var(--colorTeal500);}
+
+
+.accordion-button:not(.collapsed) {background: rgb(235, 255, 246); background: linear-gradient(315deg, rgba(235, 255, 246, 1) 16%, rgba(255, 224, 251, 1) 60%, rgba(232, 209, 255, 1) 100%);  color: var(--colorDark)!important;}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {background-color:var(--colorDark); color: var(--colorWhite)}
+
+
+
+#footer {background-color: var(--colorDark); padding: 50px 0; color: var(--colorWhite);}
+.footerCopyright {padding:20px 0; background-color: var(--colorGray100); color: var(--colorDark);}
+.footerCopyright .list-inline {list-style-type: none;}
+.footerCopyright .list-inline .list-inline-item {float: left; color: var(--colorDark); border-right: 2px solid var(--colorDark); padding:0; line-height: 16px; padding-right:15px; padding-left:15px; text-align: center;}
+.footerCopyright .list-inline .list-inline-item a { color: var(--colorDark); text-decoration: none;}
+/*=========== HOME PAGE END=================*/
+.innerEventCatagory  {list-style-type: none; padding: 0;}
+.innerEventCatagory li {display: flex;flex-direction: row; background-color: var(--colorMonoPurpleDark);padding: 5px 7px; font-size: var(--font16);font-weight: var(--fw400);color: var(--colorWhite); display: inline-block; margin-right: 10px;}
+.innerEventCatagory li i {margin-right: 15px;} 
+.keyToics {list-style-type: none; padding: 0;}
+.keyToics li {color: var(--colorDark); line-height:200%;}
+.keyToics li a {color: var(--colorMonoPurpleDark); text-decoration: none; line-height: 140%;}
+
+
+#footer .title-fs28 {margin-bottom: 30px;}
+
+.footeLinksList {list-style-type: none; padding: 0; }
+.footeLinksList li {display: block; color:var(--colorWhite); line-height: 30px; }
+.footeLinksList li a {color:var(--colorWhite); font-size: var(--font16); text-decoration: none; }
+.footeLinksList li:hover a {color:var(--colorMint300);}
+
+.socialNav {list-style-type: none; padding: 0; width: 100%;}
+.socialNav li {float: left; color:var(--colorWhite); margin-bottom: 30px;}
+.socialNav li a {color:var(--colorWhite); font-size: var(--font20); padding: 0 20px 0 0;}
+.socialNav li:hover a {color:var(--colorMint300);}
+
+
+
+
+/*=========== FAQ PAGE START =======*/
+.faq_ul {list-style-type: none; padding: 0;}
+.faq_ul li {padding-left:30px; margin-bottom: 30px;}
+.faq_ul li i{float: left; margin-left:-30px;}
+.faq_ul li span{display: block; padding: 0; font-weight:var(--fw700); margin-bottom:10px; font-size:var(--font18)}
+.faq_ul li ul {margin-top: 10px;padding-left: 15px;}
+.faq_ul li ul li {margin-bottom:7px; padding-left: 10px;}
+
+
+/*=========== FAQ PAGE END =========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:1024px){
+  .navbar-toggler {background-color: var(--colorMonoGreenMedium)!important;}
+  .bg-secondary {background-color: var(--colorDark)!important;}
+}
