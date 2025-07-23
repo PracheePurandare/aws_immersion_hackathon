@@ -1,3 +1,0 @@
-deployment:
-  tasks:
-    - cp index.php ~/public_html/2025/aws/immersion_hackathon/index.php
