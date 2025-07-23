@@ -1,1 +1,5 @@
-hh
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/prachee/public_html/2025/aws/immersion_hackathon/
+    - rm -rf $DEPLOYPATH*
+    - cp -R build/* $DEPLOYPATH
