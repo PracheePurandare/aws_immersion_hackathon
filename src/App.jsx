@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-    {/* basename="/2025/neoniche/vite/" */}
-      <Router basename="/2025/aws/immersion_hackathon/">
+    {/* basename="/2025/aws/immersion_hackathon/" */}
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

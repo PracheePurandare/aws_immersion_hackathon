@@ -16,7 +16,7 @@ const Header = () => {
 			</div>
 			<div className="offcanvas-body">          
 			<div className="navbar-nav justify-content-end flex-grow-1 pe-3">
-				<a className="nav-item nav-link" aria-current="page" href="/#event-filter">Upcoming Event</a>
+				<a className="nav-item nav-link" aria-current="page" href="./#event-filter">Upcoming Event</a>
 				<a className="nav-item nav-link" href="FAQ">FAQ</a>
 				<a className="nav-item nav-link" href="Registration">Registration</a>
 				{/*<a className="nav-item nav-link" href="#">Contact Us</a>

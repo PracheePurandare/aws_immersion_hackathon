@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/2025/aws/immersion_hackathon/',  
+  // base: '/2025/aws/immersion_hackathon/',  
   plugins: [react()],
   build: {
     outDir: 'build',  // Change from 'dist' to 'build'

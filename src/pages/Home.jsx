@@ -6,21 +6,35 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
 const Home = () => {
-
-	 const [events, setEvents] = useState([]);
-	useEffect(() => {
-		fetch('http://127.0.0.1:8000/api/get_event_details')
+	// upcommig events
+	 const [upcomming_events, setUpcomming_events] = useState([]);
+	 useEffect(() => {
+		fetch('https://neonicheintegrated.in/2025/aws/immersion_hackathon/microsite/api/get_upcomming_event_api')
+		//fetch('http://127.0.0.1:8000/api/get_event_details')
 			.then((res) => res.json())
 			.then((data) => {
 				console.log("Fetched event data:", data); 
-				setEvents(data.upcoming_events);
+				setUpcomming_events(data.upcoming_events);
 			})
 			.catch((err) => console.error("Error fetching event data:", err));
 		}, []);
 
+	// Overall	
+	const [events, setEvents] = useState([]);
+	 useEffect(() => {
+		fetch('https://neonicheintegrated.in/2025/aws/immersion_hackathon/microsite/api/get_event_details_api')
+		//fetch('http://127.0.0.1:8000/api/get_event_details')
+			.then((res) => res.json())
+			.then((data) => {
+				console.log("Fetched event data:", data); 
+				setEvents(data.overall_events);
+			})
+			.catch((err) => console.error("Error fetching event data:", err));
+		}, []);	
+
+
   return (
     <>
-    
     <header className="header-sec" id="home">
 		<div className="container">
 			<div className="row">
@@ -75,8 +89,8 @@ const Home = () => {
 			<div className="col-12">
 				<div className="title-fs28 border-bottom mb-5 pb-3">Upcoming Events</div></div>
 				<div className="col-12">
-					<div class="swiper upComingEventSwiper">
-						<div class="swiper-wrapper">
+					<div className="swiper upComingEventSwiper">
+						<div className="swiper-wrapper">
 
 						<Swiper
 						modules={[Navigation]}
@@ -84,24 +98,24 @@ const Home = () => {
 						spaceBetween={20}
 						slidesPerView={1}
 						>
-						<div class="swiper-slide">
-						{events && events.length > 0 ? (	
-						 events.map(event => (
-							<SwiperSlide key={event.id}>
+						<div className="swiper-slide">
+						{upcomming_events && upcomming_events.length > 0 ? (	
+						 upcomming_events.map(uevents => (
+							<SwiperSlide key={uevents.id}>
 							{/* Slide content */}
 							<a
-									href={`/Registration?event_id=${event.id}`}
+									href={`/Registration?event_id=${uevents.id}`}
 									className="eventUpcomingCard"
 									>
 									<div className="row">
 											<div className="col-12">
 												<div className="row justify-content-between align-items-center">
-													<div className="col-6"><div className="eventCatagory">{event.event_type === 1 ? 'Virtual Event' : 'In-Person'}</div></div>
-													<div className="col-6 text-end"><div className="attendy">L{event.level}</div></div>
+													<div className="col-6"><div className="eventCatagory">{uevents.event_type === 1 ? 'Virtual Event' : 'In-Person'}</div></div>
+													<div className="col-6 text-end"><div className="attendy">L{uevents.level}</div></div>
 												</div>
 											</div>
 											<div className="col-12">
-												<div className="eventTitle">{event.event_title}</div>
+												<div className="eventTitle">{uevents.event_title}</div>
 											</div>
 											{/* <div className="col-12">
 												<div className="event-discription">
@@ -112,7 +126,7 @@ const Home = () => {
 											<div className="col-12">
 												<ul className="eventDetails">
 													<li className="eventDetailsList">
-													<i className="bi bi-calendar-event"></i> {event.event_date}
+													<i className="bi bi-calendar-event"></i> {uevents.event_date}
 													</li>
 													<li className="eventDetailsList"><i className="bi bi-clock-history"></i> Start date -time timezone </li>
 													<li className="eventDetailsList"><i className="bi bi-chat-left-text"></i> Language: English</li>
@@ -248,27 +262,29 @@ const Home = () => {
 							</div>
 					</div>
 				</div>
-				<div className="col-lg-9 col-12">					
+				<div className="col-lg-9 col-12">	
+					{events && events.length > 0 ? (	
+						 events.map(events => (				
 							<div className="event_main_con">
 								<div className="row justify-content-between border-bottom pb-3">
 									<div className="col">
-										<div className="event-type">Virtual Event</div>
+										<div className="event-type">{events.event_type == 1 ? 'Virtual Event' : 'In-Person'}</div>
 									</div>
 									<div className="col text-end">
-										<div className="event-seat">L100</div>
+										<div className="event-seat">L{events.level}</div>
 									</div>
 								</div>
 								<div className="row">
 									<div className="w-100"> 
-										<h2 className="eventTitle"><a href="sign-up">Event-Title</a></h2>
+										<h2 className="eventTitle"><a href="sign-up">{events.event_title}</a></h2>
 										<h3 className="eventSubTitle">About the Workshop:</h3>
-										Event Description
+										{events.event_description}
 									</div>
 								</div>
 								<div className="row justify-content-between event_main_con_footer">
 									<div className="col">
 										<div className="mb-0">
-											<span className="date">Event Date</span> |
+											<span className="date">{events.event_date}</span> |
 											<span className="duration">6 hours</span>
 										</div>
 										<div className="timeZone">Start_time - End_time Timezone</div>
@@ -278,6 +294,11 @@ const Home = () => {
 									</div>
 								</div>
 							</div>
+						))
+						
+						) : (
+							<p>No events found.</p>
+						)}	
 				</div>
 			</div>			
 		</div>
