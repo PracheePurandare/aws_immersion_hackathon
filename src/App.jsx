@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     {/* basename="/2025/aws/immersion_hackathon/" */}
-      <Router>
+      <Router basename="/2025/aws/immersion_hackathon/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
