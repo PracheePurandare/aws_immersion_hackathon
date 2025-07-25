@@ -1,6 +1,4 @@
 deployment:
   tasks:
-    - /opt/cpanel/ea-nodejs18/bin/npm install
-    - /opt/cpanel/ea-nodejs18/bin/npm run build
     - rm -rf public_html/2025/aws/immersion_hackathon/*
     - cp -r build/* public_html/2025/aws/immersion_hackathon/
