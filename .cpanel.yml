@@ -1,10 +1,6 @@
 deployment:
   tasks:
-    - export NODE_ENV=production
-    - echo "Installing dependencies..."
     - /opt/cpanel/ea-nodejs18/bin/npm install
-    - echo "Building React project..."
     - /opt/cpanel/ea-nodejs18/bin/npm run build
-    - echo "Deploying to public_html/2025/aws/immersion_hackathon..."
     - rm -rf public_html/2025/aws/immersion_hackathon/*
     - cp -r build/* public_html/2025/aws/immersion_hackathon/
